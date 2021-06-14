@@ -88,7 +88,7 @@ img {
 }
 
 .hero {
-  background: url("/img/main.png") center no-repeat;
+  background: url(../../img/main.png) center no-repeat;
   background-color: #fff;
   height: 100vh;
   min-height: 36.2222222222rem;
@@ -303,6 +303,7 @@ img {
   text-decoration: none;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 .btn--theme--yellow {
   background: #FEDB3F;
@@ -389,7 +390,7 @@ img {
   }
 }
 .benefits__item:before {
-  content: url(/img/separator.png);
+  content: url(../../img/separator.png);
   position: absolute;
   top: 3.1666666667rem;
   right: 0;
@@ -641,7 +642,7 @@ img {
   border: solid 0.1666666667rem transparent;
   border-radius: 0.2222222222rem;
 }
-.form__input:--textarea {
+.form__input--textarea {
   height: 8.4444444444rem;
   resize: none;
 }
@@ -696,8 +697,8 @@ img {
 .radio--checkbox .radio__visible {
   border-radius: 0;
 }
-.radio--checkbox:before {
-  background: url(/img/tick.png) center center no-repeat;
+.radio--checkbox .radio__visible:before {
+  background: url(../../img/tick.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -729,8 +730,8 @@ img {
 }
 
 .order-section {
-  background: url(/img/cta.jpg) center center no-repeat;
-  background-size: contain;
+  background: url(../../img/cta.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 .fixed-menu {
@@ -758,8 +759,8 @@ img {
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #fff;
   position: absolute;
