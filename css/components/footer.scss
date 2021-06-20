@@ -1,0 +1,216 @@
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(18px);
+    
+    @include tablets {
+        align-items: flex-start;
+    }
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
+}
+
+.footer__col--align--right {
+    justify-content: flex-end;
+}
+
+.contacts {
+    margin-right: rem(400px);
+
+}
+
+.contacts__desc {
+    font-weight: 400;
+    font-size: 21px;
+    color: #292929;
+    display: flex;
+
+    @include phones {
+        padding: 0 0%;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+.footer__phone-number {
+    font-size: rem(21px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #292929;
+}
+
+.phone-number__icon {
+    flex-shrink: 0;
+}
+
+.footer__phone-number__icon-elem {
+    width: rem(13px);
+    height: rem(14px);
+    margin-right: rem(6px);
+    color: #292929;
+}
+
+.phone-number__text {
+    white-space: nowrap;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rem(14px);
+    cursor: pointer;
+}
+
+.socials__item {
+    text-decoration: none;
+    width: rem(20px);
+    height: rem(20px);
+    background-color: #B3B3B3;
+    padding: rem(14px);
+    background: center center no-repeat;
+    position: relative;
+}
+
+.socials__item:hover:before {
+    opacity: 1;
+}
+
+.socials__item:hover:after {
+    opacity: 0;
+}
+
+.socials__item--icon--vk:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-50px -50px);
+    transition: .3s;
+}
+
+.socials__item--icon--vk:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-50px -50px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.socials__item--icon--vk:hover:after {
+    background-position: rem(-50px -50px);
+}
+
+.socials__item--icon--facebook:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-50px -10px);
+    transition: .3s;
+}
+
+.socials__item--icon--facebook:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-290px -10px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.socials__item--icon--facebook:hover:after {
+    background-position: rem(-50px -10px);
+}
+
+.socials__item--icon--instagram:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-10px -10px);
+    transition: .3s;
+}
+
+.socials__item--icon--instagram:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-234px -10px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.socials__item--icon--instagram:hover:after {
+    background-position: rem(-10px -10px);
+}
+
+.socials__item--icon--twitter:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-10px -50px);
+    transition: .3s;
+}
+
+.socials__item--icon--twitter:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    transform: translate(-50%, -50%);
+    background: url('./img/sprites.png') rem(-178px -10px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.socials__item--icon--twitter:hover:after {
+    background-position: rem(-10px -50px);
+}
